@@ -1,0 +1,25 @@
+<template>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">SCHALE</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/test">Test</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/directives">Function</a>
+      </li>
+    </ul>
+    </nav>
+</template>
+
+<script>
+    export default {
+        name:"AppHeader"
+    }
+</script>
