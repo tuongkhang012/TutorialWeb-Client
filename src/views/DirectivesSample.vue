@@ -1,14 +1,18 @@
 <template>
+    <head>
+        <title>Directives</title>
+    </head>
     <div>
         <h2>Directives</h2>
         <!-- axios -->
         <div>
             <button @click="getStudents">Get Students</button>
-            <ul>
+            <ul align="left">
                 <li v-for="student in data">
-                    <p>{{ student.name }}</p>
-                    <p>{{ student.birth_day }}</p>
-                    <p>{{ student.school }}</p>
+                    <p>Name: {{ student.name }}</p>
+                    <p>Birthday: {{ student.birth_day }}</p>
+                    <p>School: {{ student.school }}</p>
+                    <p>Equipments: {{ student.equipments }}</p>
                 </li>
             </ul>
         </div>
@@ -20,7 +24,7 @@
 
 <script>
 // import PropsSample from "./PropsSample.vue";
-import axios from "axios";
+import axios from "../api/api.js";
 
 export default {
     name: "DirectivesSample",
@@ -38,13 +42,18 @@ export default {
         },
         getStudents() {
             axios
-            // thay đổi url của backend server api
-                .get("http://localhost:8081/api/students")
+            // direct to the link of the backend server api
+                .get("/students")
                 .then((response) => {
-                    console.log(response);
                     this.data = response.data.Student;
                 })
-                .catch({});
+                .catch((err) => {
+                    console.log({
+                        success: false,
+                        message: 'Server error. Please try again.',
+                        err: err.message
+                    })
+                });
         },
     },
 };

@@ -1,8 +1,10 @@
 <template>
-  <AppHead />
-  <AppHeader />
-  <router-view />
-  <AppFooter />
+  <div id="app">
+    <AppHead />
+    <AppHeader />
+    <router-view />
+    <AppFooter />
+  </div>
 </template>
 
 <script>
@@ -33,6 +35,5 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

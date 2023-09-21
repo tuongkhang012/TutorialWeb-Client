@@ -1,8 +1,4 @@
 <template>
-    <head>
-    <title> Shitpost </title>
-    </head>
-
     <body bgcolor="#b7baf4" vlink="#ff0000">
 
     <!-- comment: heading -->
@@ -28,7 +24,7 @@
     <hr width="20%" align="right" />
 
     <!-- image -->
-    <div style="padding-left:300px;">
+    <div align="center">
     <img src="HoshinoBanner.jpg" alt="no ojisan" />
     </div>
 
@@ -36,14 +32,14 @@
     <p align="center"><a href="https://www.pixiv.net/en/artworks/109553788"><strong>Sauce</strong></a></p>
 
     <!-- ordered list -->
-    <ol>
+    <ol align="left">
     <li>いち</li>
     <li>に</li>
     <li>さん</li>
     </ol>
 
     <!-- unordered list -->
-    <ul>
+    <ul align="left">
         <li><span style="color:red;">あか</span></li>
         <li><span style="color:blue;">あお</span></li>
         <li><span style="color:green;">みどり</span></li>
@@ -94,7 +90,7 @@
     <textarea name="message"></textarea>
 
     <!-- follow me -->
-    <div class="section">
+    <div class="section" align="center">
     <h1><span>My social</span></h1>
     <iframe height="150" width="300" src="AmeDumb.png" allowfullscreen frameborder="0"></iframe>
     </div>
