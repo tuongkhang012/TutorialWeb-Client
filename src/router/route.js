@@ -3,7 +3,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import TestZone from '../views/TestZone.vue'
-import DirectivesSample from '../views/DirectivesSample.vue'
+import StudentView from '../views/StudentView.vue'
+import SchoolView from '../views/SchoolView.vue'
+import EquipmentView from '../views/EquipmentView.vue'
 import LoginView from '../views/LoginView.vue'
 import RegisterView from '../views/RegisterView.vue'
 
@@ -30,10 +32,10 @@ const routes = [
         }
     },
     { 
-        path: '/directives',
-        component: DirectivesSample,
+        path: '/students',
+        component: StudentView,
         meta: {
-            title: 'Directives',
+            title: 'Student',
         }
     },
     { 
@@ -48,6 +50,20 @@ const routes = [
         component: RegisterView,
         meta: {
             title: 'Register',
+        }
+    },
+    { 
+        path: '/schools',
+        component: SchoolView,
+        meta: {
+            title: 'School',
+        }
+    },
+    { 
+        path: '/equips',
+        component: EquipmentView,
+        meta: {
+            title: 'Equipment',
         }
     },
 ]

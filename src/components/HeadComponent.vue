@@ -1,8 +1,7 @@
 <template>
     <meta charset="UTF-8">
+    <html data-bs-theme="dark"></html>
 
-    <!-- CSS (load bootstrap from a CDN) -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"> -->
 </template>
 
 <script>

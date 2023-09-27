@@ -5,12 +5,13 @@
     <body class="container">
 
     <main>
-    <div v-if="isLoggedIn" class="jumbotron">
+    <div v-if="isLoggedIn" class="mt-4 p-5 bg-secondary bg-gradient rounded">
         <h1>Welcome back, {{ username }}!</h1>
     </div>
-    <div v-else class="jumbotron">
-        <h1>It's empty</h1>
-        <p>like my soul...</p>
+    <div v-else class="mt-4 p-5 bg-secondary bg-gradient rounded">
+        <h1 class="text-light">Welcome to SCHALE!</h1>
+        <p class="text-light">We thirst for the Seven Wailings,
+        <br> We bear the Koan of Jericho</p>
     </div>
     </main>
 

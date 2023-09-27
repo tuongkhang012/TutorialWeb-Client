@@ -5,12 +5,13 @@
         <title>About</title>
     </head>
     <main>
-    <div class="row">
-        <div class="col-sm-8">
-            <div class="jumbotron">
-            <h1>Made by Akane</h1>
-            </div>
+    <div class="mt-4 p-5 bg-secondary bg-gradient rounded">
+        <div class="container">
+            <h1 class="text-light">Made by Akane</h1>
         </div>
+    </div>
+    <div>
+        <button type="button" class="btn btn-outline-secondary m-4 p-2" @click="showAlert">Say Hi!</button>
     </div>
     </main>
 
@@ -29,7 +30,9 @@ export default {
         };
     },
     methods: {
-        
+        showAlert() {
+            alert("Hello there!");
+        },
     },
 };
 </script>
