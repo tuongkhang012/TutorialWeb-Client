@@ -19,12 +19,12 @@ npm run build
 ```
 npm run lint
 ```
-Extra package needed:
-sweetalert
-bootstrap
-bootstrap-vue
-moment
-@popperjs/core
+### Extra package needed:
+sweetalert\
+bootstrap\
+bootstrap-vue\
+moment\
+@popperjs/core\
 axios
 
 ### Customize configuration
