@@ -271,7 +271,7 @@ export default {
             const msg = outputJson.msg;
 
             if(!checker){
-                alert(msg);
+                swal("Missing field!", msg, "error");
                 return
             }
 

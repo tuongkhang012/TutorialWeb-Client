@@ -41,7 +41,7 @@
                         </div>
                         <div class="modal-body p-4">
                             <form>
-                                <div class="form-outline mb-4">
+                                <div class="form-group mb-4">
                                     <label>Name:</label>
                                     <input v-model="schoolModal.dataSchool.name" type="text" placeholder="Name" 
                                     class="form-control" required />
@@ -58,6 +58,7 @@
 
 <script>
 import axios from "../api/api.js";
+import swal from "sweetalert"
 
 export default {
     name: "SchoolView",
@@ -121,12 +122,13 @@ export default {
             const msg = outputJson.msg;
 
             if(!checker){
-                alert(msg);
+                swal("Missing field!", msg, "error");
                 return
             }
 
             if (submitType === "create") {
                 await axios.post("/school", data);
+                await swal("Success!", "Created new school", "success");
             } else {
                 const { _id, ...rest } = data;
                 await axios.put(`/school/${_id}`, rest);

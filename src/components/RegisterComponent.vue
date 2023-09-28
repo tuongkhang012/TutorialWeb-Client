@@ -8,30 +8,29 @@
             @submit.prevent="registerUser"
           >
             <!-- Name -->
+            <h3 class="m-3"> REGISTER </h3>
             <input
               type="text"
               id="name"
-              class="form-control mb-5"
+              class="form-control mb-2"
               placeholder="Name"
               v-model="register.name"
               required
             />
-            <br />
             <!-- Email -->
             <input
               type="email"
               id="email"
-              class="form-control mb-5"
+              class="form-control mb-2"
               placeholder="Email"
               v-model="register.email"
               required
             />
-            <br />
             <!-- Password -->
             <input
               type="password"
               id="password"
-              class="form-control mb-5"
+              class="form-control mb-2"
               placeholder="Password"
               v-model="register.password"
             />

@@ -3,15 +3,16 @@
     <div class="row">
       <div class="col-lg-6 offset-lg-3 col-sm-10 offset-sm-1">
         <form
-          class="text-center border border-primary p-5"
-          style="margin-top:70px; height:auto; padding-top:100px !important;"
-          @submit.prevent="loginUser"
+        class="text-center border border-primary p-5"
+        style="margin-top:70px; height:auto; padding-top:100px !important;"
+        @submit.prevent="loginUser"
         >
+        <h3 class="m-3"> LOGIN </h3>
           <!-- Email -->
           <input
             type="text"
             id="email"
-            class="form-control mb-5"
+            class="form-control mb-2"
             placeholder="Email"
             v-model="login.email"
           />
@@ -19,7 +20,7 @@
           <input
             type="password"
             id="password"
-            class="form-control mb-5"
+            class="form-control mb-2"
             placeholder="Password"
             v-model="login.password"
           />
@@ -62,7 +63,7 @@ export default {
                 this.$router.push("/");
             }
         } catch (err) {
-            swal("Error", "Something went wrong", "error");
+            swal("Error", "Wrong password or email", "error");
             console.log(err.response);
         }
     }

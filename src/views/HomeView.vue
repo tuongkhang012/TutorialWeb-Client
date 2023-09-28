@@ -5,6 +5,9 @@
     <body class="container">
 
     <main>
+    <div class="my-4">
+        <img src="../../public/schale.png" alt="logo">
+    </div>
     <div v-if="isLoggedIn" class="mt-4 p-5 bg-secondary bg-gradient rounded">
         <h1>Welcome back, {{ username }}!</h1>
     </div>
